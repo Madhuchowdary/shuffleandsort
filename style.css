@@ -1,0 +1,100 @@
+html,body{
+  height:100%;
+}
+h1{
+  height:30px;
+  text-align: center;
+}
+
+body>div{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#cards{
+  display: flex;
+  flex-direction: row; 
+  flex-grow: 2;
+}
+#cardsContainer li{
+	width: 33%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFFFFF;
+    font-size: 5em;
+}
+#cardsContainer{
+	flex-grow: 2;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+#cards #userInteraction{
+	width: 20%;
+	margin: 2em 0 0 2em;
+}
+#cards>div button{
+	width: 80%;
+    height: 40px;
+    margin: 9px;
+    box-shadow: 0 2px #2F454E;
+    border-radius: 5px;
+    background: #72C3DC;
+    border: none
+}
+#shuffleandSortBy{
+	text-align: center;
+	color:#333333;
+}
+.coloredspan{
+	display: none;
+}
+@media only screen and (max-width: 375px) {
+  h1{
+  	height: 29px;
+    text-align: center;
+    font-size: 1.5em;
+    background: #333333;
+    color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  #cards{
+  	flex-direction: column-reverse;
+  }
+  #cardsContainer li{
+	  width: 90%;
+	  font-size: 0.8em;	 
+	  background-color: #EFEFEF;
+	  color:#000000;
+	  margin-bottom: 2px;	
+  }	
+  #cards #userInteraction{
+	width: 100%;
+	margin: 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+ }
+ #cards>div button{
+ 	width: 60px;
+ 	padding: 10px;
+ 	height: 30px;
+ 	margin: 0 5px;
+ }
+ .coloredspan{
+ 	display: block;
+ 	width: 20px;
+ }
+ .dataSpan{
+ 	flex-grow: 2;
+ 	background-color: #f7f7f7;
+ 	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+}
