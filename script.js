@@ -10,7 +10,7 @@ class Cards {
     this will be called from event handles;
     */
     this.callbacks = callbacks; 
-    // cashing the sorted view in virtualUL so that we can reuse it
+    // caching the sorted view in virtualUL so that we can reuse it
     // when user clicks on sort with out building it again.
     this.virtualUL =  document.createElement('ul');
   }
